@@ -2,6 +2,8 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
 import {motion} from "framer-motion";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const PortfolioCard = ({imgSrc, links, title, year, content, mainControls, delay2})=>{
 
@@ -18,7 +20,9 @@ const PortfolioCard = ({imgSrc, links, title, year, content, mainControls, delay
                 delay: delay2
             }}
         className="card w-96 bg-base-100 shadow-xl mt-10 bottom-12">
-            <figure><img src={imgSrc} alt="Shoes" /></figure>
+            <figure>
+            <LazyLoadImage src={imgSrc} alt="Shoes" effect="blur"/>
+            </figure>
             <div className="card-body">
                 <h2 className="card-title">{title}</h2>
                 <p>
