@@ -7,7 +7,7 @@ import Sidebar from './Sidebar';
 
 const NavLinks = ({ handleClick }) => (
   <div className='md:flex flex-row hidden'>
-    {categories.map((category)=>(
+    {categories.map((category, i)=>(i < categories.length - 1 && (
       <button onClick={()=>{handleClick(category.pageName)}} key={category.pageName} 
               className="flex justify-left items-center
               my-1 text-sm selection: group ml-5">
@@ -18,7 +18,7 @@ const NavLinks = ({ handleClick }) => (
                   <span className='absolute -bottom-1 rounded left-0 w-0 h-1 bg-gradient-109 from-[#3dedfd_44.2%] to-[#0388ee_95.6%] transition-all group-hover:w-full'></span>
               </p>
         </button>
-    ))}
+    )))}
   </div>
 )
 
