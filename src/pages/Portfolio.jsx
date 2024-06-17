@@ -10,6 +10,7 @@ const Portfolio = ({mobileMenuOpen}, ref) =>{
     const refAnim = useRef(null);
     //adds an intersection observer on the ref specified
     const isInView = useInView(refAnim, { once: true });
+    const firstRenderRef = useRef(false);
 
     //allows us to manually set when to our animate state when we want to 
     const mainControls = useAnimation();
@@ -22,7 +23,12 @@ const Portfolio = ({mobileMenuOpen}, ref) =>{
     }, [isInView]);
 
     useEffect(()=>{
-        mainControls.start("visible");
+        if(firstRenderRef.current){
+            mainControls.start("visible");
+        } else{
+            firstRenderRef.current = true;
+        }
+       
     }, [renderCount]);
 
     const handleLoadMore = () => {

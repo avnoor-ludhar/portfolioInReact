@@ -21,7 +21,7 @@ const PortfolioCard = ({imgSrc, links, title, year, content, mainControls, delay
             }}
         className="card w-96 bg-base-100 shadow-xl mt-10 bottom-12">
             <figure>
-            <LazyLoadImage src={imgSrc} alt="Shoes" effect="blur"/>
+            <LazyLoadImage src={imgSrc} alt={title} effect="blur"/>
             </figure>
             <div className="card-body">
                 <h2 className="card-title">{title}</h2>
