@@ -23,8 +23,6 @@ const NavLinks = ({ handleClick }) => (
 )
 
 const Navbar = ({ mobileMenuOpen, setMobileMenuOpen, handleClick })=>{
-    
-
     return (
     <div className="navbar outline-none sm:px-10 px-5 py-7 bg-base-100">
         <div className="flex-1 flex flex-row">

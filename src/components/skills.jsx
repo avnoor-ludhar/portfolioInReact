@@ -15,7 +15,7 @@ const Skills = ()=>{
                         Interpersonal skills
                     </h3>
                     <p className="w-[80%] text-center leading-7 mt-5">
-                        I value my ability to communicate and connect with others through meaningful conversations
+                        I value my ability to communicate and connect with others through meaningful conversations.
                     </p>
                     <h5 className="text-[#40A2D8] mt-9 text-lg">
                         Things I enjoy to do:
