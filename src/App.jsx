@@ -6,6 +6,7 @@ import AboutMe from './pages/AboutMe.jsx';
 import Footer from './pages/Footer.jsx';
 import Portfolio from './pages/Portfolio.jsx';
 import SkillsSection from './pages/SkillsSection.jsx';
+import Experience from './pages/Experience.jsx';
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -43,6 +44,7 @@ function App() {
         <Hero mobileMenuOpen={mobileMenuOpen}/>
         <AboutMe mobileMenuOpen={mobileMenuOpen} ref={addToRefs}/>
         <SkillsSection mobileMenuOpen={mobileMenuOpen} ref={addToRefs}/>
+        <Experience />
         <Portfolio mobileMenuOpen={mobileMenuOpen} ref={addToRefs}/>
         <Footer mobileMenuOpen={mobileMenuOpen} ref={addToRefs}/>
       </div>

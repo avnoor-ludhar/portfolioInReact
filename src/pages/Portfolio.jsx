@@ -49,7 +49,7 @@ const Portfolio = ({mobileMenuOpen}, ref) =>{
                         Here are a few past design projects I've worked on. Want to see more? <a href="mailto:avnoor0119@gmail.com" className="cursor-pointer text-[#0070E0] hover:opacity-85">Email me.</a>
                     </h3>
                 </div>
-                <div ref={refAnim} className="h-fit w-full flex flex-row items-start justify-evenly flex-wrap" >
+                <div ref={refAnim} className="h-fit w-full flex flex-row items-start justify-evenly flex-wrap">
                     {portfolioImages.map((info, i)=>(i < renderCount && (<PortfolioCard key = {info.key} imgSrc={info.img} links={info.links} title={info.title} content={info.content} year={info.postBreak} mainControls={mainControls} delay2={(0.35*(i % 3))}/>)))}
                 </div>
                 <div className="flex items-center justify-center w-full">

@@ -28,7 +28,7 @@ const SideLinks = ({handleClick, setMobileMenuOpen}) => (
 const Sidebar = ({ mobileMenuOpen, setMobileMenuOpen, handleClick })=>{
     return (
     <>
-        <div className={`fixed flex flex-col gap-5 top-0 h-screen w-2/3 bg-white pt-4
+        <div className={`fixed flex flex-col gap-5 top-0 h-screen w-full bg-white pt-4
        z-10 md:hidden transition-all justify-between ${mobileMenuOpen ? 'left-0' :
         '-left-full'}`}>
           <SideLinks handleClick={handleClick} setMobileMenuOpen={setMobileMenuOpen}/>
