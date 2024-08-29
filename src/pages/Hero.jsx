@@ -3,7 +3,7 @@ import {useRef, useEffect} from "react";
 import {motion, useInView, useAnimation, stagger} from "framer-motion";
 import computers from '../assets/computers.svg';
 
-const Hero = ({mobileMenuOpen}) => {
+const Hero = ({}) => {
     const ref = useRef(null);
     //adds an intersection observer on the ref specified
     const isInView = useInView(ref, { once: true});
@@ -20,7 +20,7 @@ const Hero = ({mobileMenuOpen}) => {
 
     return (
     <>
-        <div className={`mb-8 flex justify-center h-[70vh] xs:h-[60vh] lg:h-[70vh] pt-5 mt-5 ${mobileMenuOpen ? 'opacity-30' : 'opacity-100' } transition ease-in duration-400`}>
+        <div className={`mb-8 flex justify-center h-[70vh] xs:h-[60vh] lg:h-[70vh] pt-5 mt-[100px] transition ease-in duration-400`}>
             <div className="flex flex-row justify-center w-[90%] h-[97%]">
                 <div ref={ref} className="w-[95%] h-full flex flex-col justify-start items-center gap-5">
                     <motion.h1
@@ -64,7 +64,7 @@ const Hero = ({mobileMenuOpen}) => {
                 </div>
             </div>
         </div>
-        <div className={`flex flex-row justify-center w-full lg:h-[44vh] h-fit ${mobileMenuOpen ? 'opacity-30' : 'opacity-100' } `}>
+        <div className={`flex flex-row justify-center w-full lg:h-[44vh] h-fit`}>
             <img src={computers} className=''/>
         </div>
     </>

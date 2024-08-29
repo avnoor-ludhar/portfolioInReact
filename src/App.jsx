@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './components/Navbar.jsx';
 import Hero from './pages/Hero.jsx';
 import { useState, useRef } from 'react';
+import { Helmet } from 'react-helmet';
 import AboutMe from './pages/AboutMe.jsx';
 import Footer from './pages/Footer.jsx';
 import Portfolio from './pages/Portfolio.jsx';
@@ -18,17 +19,42 @@ function App() {
     if(mobileMenuOpen){
       setMobileMenuOpen(false);
     }
+    let index = 0;
     if(buttonClicked == 'About Me'){
-      revealRefs.current[0]?.scrollIntoView({ behavior: 'smooth' });
+      index = 0;
     } else if(buttonClicked == 'Skills'){
-      revealRefs.current[1]?.scrollIntoView({ behavior: 'smooth' });
+      index = 1;
+    } else if(buttonClicked == 'Experience'){
+      index = 2;
     } else if(buttonClicked == 'Portfolio'){
-      revealRefs.current[2]?.scrollIntoView({ behavior: 'smooth' });
-    } else if(buttonClicked == 'Contact Me'){
-      revealRefs.current[3]?.scrollIntoView({ behavior: 'smooth' });
+      index = 3;
+    }else if(buttonClicked == "Contact Me"){
+      index = 4;
     }
 
-  }
+    const element = revealRefs.current[index];
+    if (element) {
+      let topOffset;
+        if (index === 0) {
+            // For "Hero" and "Game", center the element
+            topOffset = window.innerHeight / 2 - element.clientHeight / 2;
+        } else if(index == 1){
+          topOffset = window.innerHeight / 2 - element.clientHeight / 4;
+        } else if(index == 2) {
+            // For "About" and "Contact", position slightly above the middle
+            topOffset = window.innerHeight / 2 - element.clientHeight / 4;
+        } else if(index == 3){
+            topOffset = window.innerHeight / 8;
+        } else if(index == 4){
+          topOffset = 0;
+        }
+
+        window.scrollTo({
+            top: element.offsetTop - topOffset,
+            behavior: 'smooth'
+        });
+      }
+    }
 
   const addToRefs = (el) =>{
     console.log(el);
@@ -39,12 +65,16 @@ function App() {
 
   return (
     <>
+      <Helmet>
+          <title>Avnoor Ludhar's Portfolio</title>
+          <meta name="description" content="Discover Avnoor Ludhar's projects including InterviewME and the Success Formula." />
+      </Helmet>
       <div>
         <Navbar mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} handleClick={handleClick} />
         <Hero mobileMenuOpen={mobileMenuOpen}/>
         <AboutMe mobileMenuOpen={mobileMenuOpen} ref={addToRefs}/>
         <SkillsSection mobileMenuOpen={mobileMenuOpen} ref={addToRefs}/>
-        <Experience />
+        <Experience ref={addToRefs}/>
         <Portfolio mobileMenuOpen={mobileMenuOpen} ref={addToRefs}/>
         <Footer mobileMenuOpen={mobileMenuOpen} ref={addToRefs}/>
       </div>

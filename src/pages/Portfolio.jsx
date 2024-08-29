@@ -5,7 +5,7 @@ import {motion, useInView, useAnimation} from "framer-motion";
 import { FaArrowDown } from "react-icons/fa";
 
 
-const Portfolio = ({mobileMenuOpen}, ref) =>{
+const Portfolio = ({}, ref) =>{
     const [renderCount, setRenderCount] = useState(3);
     const refAnim = useRef(null);
     //adds an intersection observer on the ref specified
@@ -40,7 +40,7 @@ const Portfolio = ({mobileMenuOpen}, ref) =>{
 
     return(
         <>
-            <div ref={ref} className={`w-full h-fit flex flex-col items-center ${mobileMenuOpen ? 'opacity-30' : 'opacity-100' } mt-5 mb-[160px]`}>
+            <div ref={ref} className={`w-full h-fit flex flex-col items-center mt-5 mb-[160px]`}>
                 <div className="w-[95%] mb-[90px]">
                     <h2 className="w-full text-center text-4xl mt-10 font-bold">
                         My Portfolio

@@ -24,7 +24,7 @@ const NavLinks = ({ handleClick }) => (
 
 const Navbar = ({ mobileMenuOpen, setMobileMenuOpen, handleClick })=>{
     return (
-    <div className="navbar outline-none sm:px-10 px-5 py-7 bg-base-100">
+    <div className="navbar outline-none sm:px-10 px-4 py-4 z-[100] fixed top-0 left-0 bg-base-100">
         <div className="flex-1 flex flex-row">
           <button onClick={()=>{handleClick('Portfolio')}} className="btn btn-ghost text-3xl">Portfolio</button>
         </div>
