@@ -68,6 +68,7 @@ function App() {
       <Helmet>
           <title>Avnoor Ludhar's Portfolio</title>
           <meta name="description" content="Discover Avnoor Ludhar's projects including InterviewME and the Success Formula." />
+          <link rel="icon" type="image/svg+xml" href="../public/Avnoor.svg" />
       </Helmet>
       <div>
         <Navbar mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} handleClick={handleClick} />
