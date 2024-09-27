@@ -36,12 +36,7 @@ const AboutMe = ({}, ref) =>{
                     Hey I'm Avnoor!
                 </h1>
                 <p className="text-center mb-2 md:text-xl text-lg text-[whitesmoke] font-thin leading-8">
-                    A first-year software engineering 
-                    student who never accepts failure, takes accountability 
-                    for all of my actions, and possesses excellent technical 
-                    and communication skills. I aim to make a meaningful 
-                    impact by creating clean commercial code that can enhance 
-                    a users' day-to-day life.
+                    I am a software engineering student at the University of Windsor who never accepts failure, takes accountability for all my actions, and possesses excellent technical and communication skills. I aim to make a meaningful impact in society through my ability to solve problems with programming.
                 </p>
             </motion.div>
         </div>

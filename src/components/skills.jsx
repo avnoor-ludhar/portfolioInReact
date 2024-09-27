@@ -15,15 +15,16 @@ const Skills = ()=>{
                         Interpersonal skills
                     </h3>
                     <p className="w-[80%] text-center leading-7 mt-5">
-                        I value my ability to communicate and connect with others through meaningful conversations.
+                        I value building meaningful connections with people through understanding and empathy.
                     </p>
                     <h5 className="text-[#40A2D8] mt-9 text-lg">
                         Things I enjoy to do:
                     </h5>
                     <div className="flex flex-col gap-2 align-center w-[80%] h-fit mt-1">
+                        <p className="text-center">Coding</p>
                         <p className="text-center">Sports</p>
                         <p className="text-center">Lifting</p>
-                        <p className="text-center">Coding</p>
+                        <p className="text-center">Billiards</p>
                     </div>
                     <h5 className="text-[#40A2D8] mt-9 text-lg">
                         Characteristics:
@@ -34,6 +35,7 @@ const Skills = ()=>{
                         <p className="text-center">Disciplined</p>
                         <p className="text-center">Friendly</p>
                         <p className="text-center">Empathetic</p>
+                        <p className="text-center">Effective Communication</p>
                     </div>
                 </div>
                 <div className="flex flex-col items-center md:h-[800px] h-[700px] md:w-1/3 w-full border-[1px] border-[#000_30%]">
@@ -44,13 +46,14 @@ const Skills = ()=>{
                         Front-end Skills
                     </h3>
                     <p className="w-[80%] text-center leading-7 mt-5">
-                        I enjoy creating visually appealing websites tailored to my clients' unique needs and preferences.
+                        I enjoy creating visually appealing applications tailored to my clients' unique needs and preferences.
                     </p>
                     <h5 className="text-[#40A2D8] mt-9 text-lg">
                         Languages:
                     </h5>
                     <div className="flex flex-col gap-2 align-center w-[80%] h-fit mt-1">
-                        <p className="text-center">Javascript(ReactJS and jQuery)</p>
+                        <p className="text-center">Javascript(React.js and jQuery)</p>
+                        <p className="text-center">TypeScript</p>
                         <p className="text-center">HTML</p>
                         <p className="text-center">CSS</p>
                     </div>
@@ -75,16 +78,16 @@ const Skills = ()=>{
                         Back-end Skills
                     </h3>
                     <p className="w-[80%] text-center leading-7 mt-5">
-                        I enjoy making applications come to life and understanding all of the details 
-                        in the creation of an application.
+                    I enjoy bringing applications to life and understanding all the details involved in their creation
                     </p>
                     <h5 className="text-[#40A2D8] mt-9 text-lg">
                         Languages:
                     </h5>
                     <div className="flex flex-col gap-2 align-center w-[80%] h-fit mt-1">
                         <p className="text-center">Javascript(Node.js, Express)</p>
-                        <p className="text-center">Python(Flask, Django)</p>
+                        <p className="text-center">Python(Flask)</p>
                         <p className="text-center">Java</p>
+                        <p className="text-center">C & C++</p>
                     </div>
                     <h5 className="text-[#40A2D8] mt-9 text-lg">
                         Dev Tools:

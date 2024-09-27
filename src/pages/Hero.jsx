@@ -33,7 +33,7 @@ const Hero = ({}) => {
                     transition={{
                         duration: 0.5,
                     }}
-                    className="w-full text-center text-[2rem] md:text-[2.6rem] lg:text-5xl mt-10 font-bold">Full-Stack Developer and Student</motion.h1>
+                    className="w-full text-center text-[2rem] md:text-[2.6rem] lg:text-5xl mt-10 font-bold">Software Developer and Student</motion.h1>
                     <motion.h2 
                     variants={{
                     hidden:{opacity:0, y:75 },

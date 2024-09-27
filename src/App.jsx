@@ -1,13 +1,9 @@
 import './App.css';
-import Navbar from './components/Navbar.jsx';
-import Hero from './pages/Hero.jsx';
 import { useState, useRef } from 'react';
 import { Helmet } from 'react-helmet';
-import AboutMe from './pages/AboutMe.jsx';
-import Footer from './pages/Footer.jsx';
-import Portfolio from './pages/Portfolio.jsx';
-import SkillsSection from './pages/SkillsSection.jsx';
-import Experience from './pages/Experience.jsx';
+import { Routes, Route, Navigate, useNavigate } from 'react-router-dom';
+import Home from './pages/Home';
+import Resume from './pages/Resume';
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -68,17 +64,12 @@ function App() {
       <Helmet>
           <title>Avnoor Ludhar's Portfolio</title>
           <meta name="description" content="Discover Avnoor Ludhar's projects including InterviewME and the Success Formula." />
-          <link rel="icon" type="image/svg+xml" href="../public/Avnoor.svg" />
+          <link rel="icon" type="image/svg+xml" href="/Avnoor.svg" />
       </Helmet>
-      <div>
-        <Navbar mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} handleClick={handleClick} />
-        <Hero mobileMenuOpen={mobileMenuOpen}/>
-        <AboutMe mobileMenuOpen={mobileMenuOpen} ref={addToRefs}/>
-        <SkillsSection mobileMenuOpen={mobileMenuOpen} ref={addToRefs}/>
-        <Experience ref={addToRefs}/>
-        <Portfolio mobileMenuOpen={mobileMenuOpen} ref={addToRefs}/>
-        <Footer mobileMenuOpen={mobileMenuOpen} ref={addToRefs}/>
-      </div>
+      <Routes>
+        <Route path='/' element={<Home mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} addToRefs={addToRefs} handleClick={handleClick}/>} />
+        <Route path='/resume' element={<Resume />} />
+      </Routes>
 
     </>
   )

@@ -18,10 +18,10 @@ const links = [
 
 const categories = [
     { pageName: 'About Me', icon: FaPerson},
-{ pageName: 'Skills', icon: GiSkills},
-{pageName: 'Experience'},
-{ pageName: 'Contact Me', icon: MdOutlineSportsGymnastics},
-{pageName: 'Portfolio'},
+    { pageName: 'Skills', icon: GiSkills},
+    {pageName: 'Experience'},
+    { pageName: 'Contact Me', icon: MdOutlineSportsGymnastics},
+    { pageName: 'Portfolio'}
 ]
 
 const portfolioImages = [
