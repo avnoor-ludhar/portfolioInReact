@@ -70,7 +70,6 @@ function App() {
         <Route path='/' element={<Home mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} addToRefs={addToRefs} handleClick={handleClick}/>} />
         <Route path='/resume' element={<Resume />} />
       </Routes>
-
     </>
   )
 }
