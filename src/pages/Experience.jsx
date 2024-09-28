@@ -1,5 +1,6 @@
 import ionicLogo from '../assets/ionicLogo.png'
 import YourBeat from '../assets/YourBeatLogo.png';
+import UofW from "../assets/UofW.png";
 import { useNavigate } from 'react-router-dom';
 import { forwardRef } from "react";
 
@@ -22,6 +23,9 @@ const Experience = ({}, ref) =>{
                                     Worked with state of the art face recognition models to see efficacy on MRI images and defaced MRI images.
                                 </p>
                                 <div className='flex flex-row gap-2'>
+                                    <a target="_blank" rel="noopener" href="https://github.com/glendorinc/GlendorInternship_Summer2024">
+                                        <button className="btn btn-sm">View</button>
+                                    </a>
                                     <button onClick={() => window.open("/resume", "_blank")} className="btn btn-sm bg-gradient-to-t text-black border-none from-green-400 via-green-500 to-green-600 hover:opacity-80">More</button>
                                 </div>
                             </div>
@@ -59,24 +63,22 @@ const Experience = ({}, ref) =>{
                             </div>
                         </div>
                     </div>
-                    <div className="aspect-[1.4/1] w-full rounded-xl relative flex items-center justify-center group">
-                        <div className='w-full h-full rounded-xl bg-gradient-to-r from-[#1E90FF] to-black absolute top-0 left-0 z-10 group-hover:bg-black transition-all duration-1000'></div>
-                        <img src={ionicLogo} className='rounded-xl z-20 absolute scale-75 group-hover:hidden transition-all duration-1000'></img>
+                    <div className="aspect-[1.4/1] w-full rounded-xl relative flex items-center justify-center group lg:col-start-2 lg:row-start-2 lg:justify-self-center">
+                        <div className='w-full h-full rounded-xl bg-gradient-to-r from-[#004488] to-[#FFCC33] absolute top-0 left-0 z-10 group-hover:bg-black transition-all duration-1000'></div>
+                        <img src={UofW} className='rounded-xl z-20 absolute group-hover:hidden transition-all duration-1000'></img>
                         <div className='w-full h-full absolute top-0 left-0 z-20 flex items-center justify-center bg-black text-white rounded-xl opacity-0 group-hover:opacity-100 group-hover:flex transition-all duration-1000 p-6 lg:p-0'>
                             <div className='flex flex-col items-center gap-3 p-6'>
-                                <h3 className="font-bold text-2xl font-Roboto bg-[#1E90FF] text-transparent bg-clip-text">
-                                    Ionic Studios Inc.
+                                <h3 className="font-bold text-2xl font-Roboto bg-[#FFCC33] text-transparent bg-clip-text text-center">
+                                    Research & Teaching Assistant
                                 </h3>
-                                <p className='text-md font-Roboto text-center font-thin'>Created a Full stack application to display Ionic Studio's new game CORE: Neurolink.</p>
+                                <p className='text-md font-Roboto text-center font-thin'>Teaching Assistant for COMP 1410 and researching social media sentiment and wastewater analysis. </p>
                                 <div className='flex flex-row gap-2'>
-                                    <a target="_blank" rel="noopener" href="https://ionic-studios-test.netlify.app/">
-                                        <button className="btn btn-sm">View</button>
-                                    </a>
-                                    <button onClick={() => window.open("/resume", "_blank")} className="btn btn-sm bg-[#1E90FF] border-[#1E90FF] text-black hover:opacity-80 hover:bg-[#1E90FF] hover:border-[#1E90FF]">More</button>
+                                    <button onClick={() => window.open("/resume", "_blank")} className="btn btn-sm bg-[#FFCC33] border-[#FFCC33] text-black hover:opacity-80 hover:bg-[#FFCC33] hover:border-[#FFCC33]">More</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
            </div>
         </div>

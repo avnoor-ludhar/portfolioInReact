@@ -43,7 +43,7 @@ const portfolioImages = [
         git: "https://github.com/avnoor-ludhar/Dhol",
         website: "https://dhol.netlify.app/",
     },
-    title: "Lyriks",
+    title: "Dhol",
     content: "Created a front-end application using React, Rapid API, Redux Toolkit, and RTK query. Created a robust UI with strong error handling. Implemented Redux Toolkit to manage complex state in the form of the player slice. Website is hosted on Netlify click the link below to view.",
     postBreak: "Creation year: 2023."
 }, 
@@ -55,7 +55,7 @@ const portfolioImages = [
         website: "https://avnoorludhar.netlify.app/",
     },
     title: "Avnoor's Portfolio",
-    content: "Welcome to my portfolio website where I display the work I have completed in the past. This application was built using React, TailwindCSS, Framer Motion, and Vite. It displays my ability to create visually appealing front-end websites.",
+    content: "Welcome to my portfolio website where I display the work I have completed in the past. This application was built using React, TailwindCSS, Framer Motion, and Vite. It displays my ability to create visually appealing Front-end applications.",
     postBreak: "Creation year: 2024"
 },
 {
@@ -66,7 +66,7 @@ const portfolioImages = [
         website: "https://github.com/avnoor-ludhar/schedule-app",
     },
     title: "Success Formula",
-    content: "The Success Formula is a scheduling app that implements google books API. The full stack application is built using mongoDB, Express, Node.js, EJS and CSS. Displaying a strong understanding of fullstack principles. More information and a demo video can be found in the GitHub Repository. ",
+    content: "The Success Formula is a scheduling app that implements google books API. The full stack application is built using MongoDB, Express, Node.js, EJS and CSS. Displaying a strong understanding of fullstack principles. More information and a demo video can be found in the GitHub Repository. ",
     postBreak: "Creation year: 2023."
 },
 {
@@ -78,7 +78,7 @@ const portfolioImages = [
     },
     title: "Av Academy Workout App",
     content: "I developed a workout builder app in Java, utilizing the Swing graphics library and adhering to Object-Oriented Programming (OOP) principles. This project demonstrates a deep understanding of classes, methods, fields, and fundamental programming principles.",
-    postBreak: "Creation year: 2021.",
+    postBreak: "Creation year: 2022.",
 },
 {
     key: 105,
@@ -88,7 +88,7 @@ const portfolioImages = [
         website: "https://github.com/avnoor-ludhar/Asteroids"
     },
     title: "Retro Asteroids Game",
-    content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only fiv",
+    content: "I created a remake of the retro Asteroids game using the Java Swing graphics library. The application uses velocity vectors for bullets and also bounding boxes for collision detection. Please check out the source code in the GitHub repository.",
     postBreak: "Creation year: 2021"
 },
 {
@@ -99,9 +99,10 @@ const portfolioImages = [
         website: "https://github.com/avnoor-ludhar/galleryShooterGame"
     },
     title: "Army Base Defence",
-    content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only fiv.",
-    postBreak: "Creation year: 2020"
+    content: "Created a gallery shooter like game in Python using the Pygame package. Score as many points as you can while trying not to get shot by the army officials, but be careful not to shoot civilians! The source code is linked in the GitHub repository.",
+    postBreak: "Creation year: 2021"
 },
+
 ]
 
 export { links, categories, portfolioImages};

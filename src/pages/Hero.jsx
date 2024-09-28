@@ -57,9 +57,8 @@ const Hero = ({}) => {
                         duration: 0.5,
                         delay: 0.3
                     }}
-                    className="md:w-[260px] md:h-[260px] w-[170px] h-[170px] bg-[#40A2D8] rounded-full mt-10 shadow-lg">
-
-                        <img src={bitmoji} className="relative bottom-0 w-[100%] h-[100%]"/>
+                    className="md:w-[260px] md:h-[260px] w-[170px] h-[170px] bg-[#40A2D8] rounded-full mt-10 shadow-lg z-10">
+                        <img src={bitmoji} className="relative bottom-0 w-[100%] h-[100%] z-[12]"/>
                     </motion.div>
                 </div>
             </div>
