@@ -1,5 +1,5 @@
 import './App.css';
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { Routes, Route, Navigate, useNavigate } from 'react-router-dom';
 import Home from './pages/Home';
@@ -53,7 +53,9 @@ function App() {
     }
 
   const addToRefs = (el) =>{
-    console.log(el);
+    if(revealRefs.current.length == 5){
+      revealRefs.current = [];
+    }
     if(el && !revealRefs.current.includes(el)){
       revealRefs.current.push(el);
     }

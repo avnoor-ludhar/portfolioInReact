@@ -6,6 +6,7 @@ import { forwardRef } from "react";
 
 const Experience = ({}, ref) =>{
     const navigate = useNavigate();
+
     return (
         <div ref={ref} className="w-full mt-5 h-fit flex flex-col items-center justify-center mb-[100px]">
            <div className="w-[90%] h-fit ">
@@ -78,7 +79,6 @@ const Experience = ({}, ref) =>{
                             </div>
                         </div>
                     </div>
-
                 </div>
            </div>
         </div>
