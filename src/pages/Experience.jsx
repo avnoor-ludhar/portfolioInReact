@@ -3,6 +3,7 @@ import YourBeat from '../assets/YourBeatLogo.png';
 import UofW from "../assets/UofW.png";
 import { useNavigate } from 'react-router-dom';
 import { forwardRef } from "react";
+import { IoIosPaper } from "react-icons/io";
 
 const Experience = ({}, ref) =>{
     const navigate = useNavigate();
@@ -27,7 +28,7 @@ const Experience = ({}, ref) =>{
                                     <a target="_blank" rel="noopener" href="https://github.com/glendorinc/GlendorInternship_Summer2024">
                                         <button className="btn btn-sm">View</button>
                                     </a>
-                                    <button onClick={() => navigate("/resume")} className="btn btn-sm bg-gradient-to-t text-black border-none from-green-400 via-green-500 to-green-600 hover:opacity-80">More</button>
+                                    <button onClick={() => navigate("/resume")} className="btn btn-sm bg-gradient-to-t text-black border-none from-green-400 via-green-500 to-green-600 hover:opacity-80"><IoIosPaper className='scale-[1.6]'/></button>
                                 </div>
                             </div>
                         </div>
@@ -45,7 +46,7 @@ const Experience = ({}, ref) =>{
                                     <a target="_blank" rel="noopener" href="https://ionic-studios-test.netlify.app/">
                                         <button className="btn btn-sm">View</button>
                                     </a>
-                                    <button onClick={() => navigate("/resume")} className="btn btn-sm bg-[#1E90FF] border-[#1E90FF] text-black hover:opacity-80 hover:bg-[#1E90FF] hover:border-[#1E90FF]">More</button>
+                                    <button onClick={() => navigate("/resume")} className="btn btn-sm bg-[#1E90FF] border-[#1E90FF] text-black hover:opacity-80 hover:bg-[#1E90FF] hover:border-[#1E90FF]"><IoIosPaper className='scale-[1.6]'/></button>
                                 </div>
                             </div>
                         </div>
@@ -59,7 +60,7 @@ const Experience = ({}, ref) =>{
                                     Created a map search functionality in Next.js to link Canadian music artists to venues.
                                 </p>
                                 <div className='flex flex-row gap-2'>
-                                    <button onClick={() => navigate("/resume")} className="btn btn-sm bg-gradient-to-t text-black border-none from-red-500 via-orange-500 to-yellow-500 hover:opacity-80">More</button>
+                                    <button onClick={() => navigate("/resume")} className="btn btn-sm bg-gradient-to-t text-black border-none from-red-500 via-orange-500 to-yellow-500 hover:opacity-80"><IoIosPaper className='scale-[1.6]'/></button>
                                 </div>
                             </div>
                         </div>
@@ -74,7 +75,7 @@ const Experience = ({}, ref) =>{
                                 </h3>
                                 <p className='text-md font-Roboto text-center font-thin'>Teaching Assistant for COMP 1410 and researching social media sentiment and wastewater analysis. </p>
                                 <div className='flex flex-row gap-2'>
-                                    <button onClick={() => navigate("/resume")} className="btn btn-sm bg-[#FFCC33] border-[#FFCC33] text-black hover:opacity-80 hover:bg-[#FFCC33] hover:border-[#FFCC33]">More</button>
+                                    <button onClick={() => navigate("/resume")} className="btn btn-sm bg-[#FFCC33] border-[#FFCC33] text-black hover:opacity-80 hover:bg-[#FFCC33] hover:border-[#FFCC33]"><IoIosPaper className='scale-[1.6]'/></button>
                                 </div>
                             </div>
                         </div>
