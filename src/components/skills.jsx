@@ -7,15 +7,15 @@ const Skills = ()=>{
     return(
         <div className="w-full h-fit flex md:flex-row flex-col justify-center items-center relative bottom-20">
             <div className="w-[95%] shadow-md h-fit flex md:flex-row flex-col justify-center rounded-2xl bg-white">
-                <div className="flex flex-col items-center md:h-[800px] h-[700px] md:w-1/3 w-full md:rounded-tl-2xl md:rounded-bl-2xl md:rounded-tr-none rounded-tr-2xl rounded-tl-2xl border-[1px] border-[#000_30%]">
-                    <div className="bg-[#0B60B0] w-20 h-20 rounded-full mt-[50px] flex items-center justify-center">
-                        <FaPeopleArrows className="scale-[2.6] text-white"/>
+                <div className="flex flex-col items-center md:h-[800px] h-[700px] md:w-1/3 w-full md:rounded-tl-2xl md:rounded-bl-2xl md:rounded-tr-none rounded-tr-2xl rounded-tl-2xl border-[1px] border-[#000_30%] md:p-0 pb-6">
+                    <div className="bg-[#0B60B0] md:w-20 md:h-20 h-16 w-16 rounded-full md:mt-[50px] mt-[35px] flex items-center justify-center">
+                        <FaPeopleArrows className="md:scale-[2.6] scale-[2.2] text-white"/>
                     </div>
                     <h3 className="font-bold text-black text-2xl mt-7">
                         Interpersonal skills
                     </h3>
                     <p className="w-[80%] text-center leading-7 mt-5">
-                        I value building meaningful connections with people through understanding and empathy.
+                        I value building meaningful connections with people through collaboration and empathy.
                     </p>
                     <h5 className="text-[#40A2D8] mt-9 text-lg">
                         Things I enjoy to do:
@@ -38,9 +38,9 @@ const Skills = ()=>{
                         <p className="text-center">Effective Communication</p>
                     </div>
                 </div>
-                <div className="flex flex-col items-center md:h-[800px] h-[700px] md:w-1/3 w-full border-[1px] border-[#000_30%]">
-                    <div className="bg-[#0B60B0] w-20 h-20 rounded-full mt-[50px] flex items-center justify-center">
-                        <MdOutlineScreenshotMonitor className="scale-[3] text-white"/>
+                <div className="flex flex-col items-center md:h-[800px] h-[700px] md:w-1/3 w-full border-[1px] border-[#000_30%] md:p-0 pb-6">
+                    <div className="bg-[#0B60B0] md:w-20 md:h-20 h-16 w-16 rounded-full md:mt-[50px] mt-[35px] flex items-center justify-center">
+                        <MdOutlineScreenshotMonitor className="md:scale-[3] scale-[2.4]  text-white"/>
                     </div>
                     <h3 className="font-bold text-black text-2xl mt-7">
                         Front-end Skills
@@ -70,9 +70,9 @@ const Skills = ()=>{
 
                     </div>
                 </div>
-                <div className="flex flex-col items-center md:h-[800px] h-[700px] md:w-1/3 w-full md:rounded-tr-2xl md:rounded-br-2xl md:rounded-bl-none rounded-br-2xl rounded-bl-2xl border-[1px] border-[#000_30%]">
-                    <div className="bg-[#0B60B0] w-20 h-20 rounded-full mt-[50px] flex items-center justify-center">
-                    <FaTools className="scale-[2.6] text-white"/>
+                <div className="flex flex-col items-center md:h-[800px] h-[700px] md:w-1/3 w-full md:rounded-tr-2xl md:rounded-br-2xl md:rounded-bl-none rounded-br-2xl rounded-bl-2xl border-[1px] border-[#000_30%] md:p-0 pb-6">
+                    <div className="bg-[#0B60B0] md:w-20 md:h-20 h-16 w-16 rounded-full md:mt-[50px] mt-[35px] flex items-center justify-center">
+                    <FaTools className="md:scale-[2.6] scale-[2.2] text-white"/>
                     </div>
                     <h3 className="font-bold text-black text-2xl mt-7">
                         Back-end Skills
