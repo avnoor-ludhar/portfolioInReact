@@ -46,7 +46,7 @@ const Portfolio = ({}, ref) =>{
                         My Portfolio
                     </h2>
                     <h3 className="w-full text-center text-xl mt-6">
-                        Here are a few past design projects I've worked on. Want to see more? <a href="mailto:avnoor0119@gmail.com" className="cursor-pointer text-[#0070E0] hover:opacity-85">Email me.</a>
+                        Here are a few past projects I've worked on. Want to know more? <a href="mailto:avnoor0119@gmail.com" className="cursor-pointer text-[#0070E0] hover:opacity-85">Email me.</a>
                     </h3>
                 </div>
                 <div ref={refAnim} className="h-fit w-full flex flex-row items-start justify-evenly flex-wrap">
