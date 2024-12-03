@@ -14,6 +14,7 @@ const Experience = ({}, ref) =>{
                 <h3 className="w-full text-center text-4xl mt-10 font-bold">Work Experience</h3>
                 <p className="w-full text-center text-xl mt-6 mb-[70px]">Here are a couple of the companies I have worked for!</p>
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 auto-rows-auto w-full h-[50%] justify-evenly gap-10">
+                    {/* Glendor Inc */}
                     <div className="aspect-[1.4/1] w-full rounded-xl relative group">
                         <div className='flex items-center justify-center w-full h-full rounded-xl bg-gradient-to-r from-green-700 via-green-800 to-green-900 absolute top-0 left-0 group-hover:opacity-0 opacity-100 transition-all duration-1000'>
                             <img src="https://glendor.com/wp-content/uploads/2022/09/logo-footersvg.svg" className='rounded-xl z-20 absolute group-hover:hidden transition-all duration-1000 scale-125'></img>
@@ -33,6 +34,8 @@ const Experience = ({}, ref) =>{
                             </div>
                         </div>
                     </div>
+
+                    {/* Ionic Studios */}
                     <div className="aspect-[1.4/1] w-full rounded-xl relative flex items-center justify-center group">
                         <div className='w-full h-full rounded-xl bg-gradient-to-r from-[#1E90FF] to-black absolute top-0 left-0 z-10 group-hover:bg-black transition-all duration-1000'></div>
                         <img src={ionicLogo} className='rounded-xl z-20 absolute scale-75 group-hover:hidden transition-all duration-1000'></img>
@@ -51,6 +54,8 @@ const Experience = ({}, ref) =>{
                             </div>
                         </div>
                     </div>
+
+                    {/* YourBeat Inc */}
                     <div className="aspect-[1.4/1] w-full rounded-xl relative group bg-black">
                         <img src={YourBeat} className='rounded-xl z-0 absolute w-full h-full group-hover:opacity-0 transition-all duration-1000'></img>
                         <div className='w-full h-full absolute top-0 left-0 z-20 flex items-center justify-center text-white rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-1000'>
@@ -65,6 +70,8 @@ const Experience = ({}, ref) =>{
                             </div>
                         </div>
                     </div>
+
+                    {/* UofW */}
                     <div className="aspect-[1.4/1] w-full rounded-xl relative flex items-center justify-center group lg:col-start-2 lg:row-start-2 lg:justify-self-center">
                         <div className='w-full h-full rounded-xl bg-gradient-to-r from-[#004488] to-[#FFCC33] absolute top-0 left-0 z-10 group-hover:bg-black transition-all duration-1000'></div>
                         <img src={UofW} className='rounded-xl z-20 absolute group-hover:hidden transition-all duration-1000'></img>
@@ -79,6 +86,16 @@ const Experience = ({}, ref) =>{
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    {/* Opportunity 1 */}
+                    <div className="aspect-[1.4/1] w-full rounded-xl lg:flex items-center justify-center bg-gray-200 hidden">
+                        <p className="text-gray-500 font-Roboto text-center px-4">Open to new opportunities. Let's connect!</p>
+                    </div>
+
+                    {/* Opportunity 2 */}
+                    <div className="aspect-[1.4/1] w-full rounded-xl lg:flex items-center justify-center bg-gray-200 hidden">
+                        <p className="text-gray-500 font-Roboto text-center px-4">Interested in collaborating? Reach out!</p>
                     </div>
                 </div>
            </div>

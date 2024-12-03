@@ -7,11 +7,13 @@ import Resume from './pages/Resume';
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const revealRefs = useRef([]);
   revealRefs.current = [];
 
   const handleClick = (buttonClicked) =>{
+    console.log(buttonClicked);
     if(mobileMenuOpen){
       setMobileMenuOpen(false);
     }
@@ -26,6 +28,9 @@ function App() {
       index = 3;
     }else if(buttonClicked == "Contact Me"){
       index = 4;
+    }else if(buttonClicked == "Resume"){
+      navigate("/resume");
+      return;
     }
 
     const element = revealRefs.current[index];
