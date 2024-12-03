@@ -87,16 +87,6 @@ const Experience = ({}, ref) =>{
                             </div>
                         </div>
                     </div>
-
-                    {/* Opportunity 1 */}
-                    <div className="aspect-[1.4/1] w-full rounded-xl lg:flex items-center justify-center bg-gray-200 hidden">
-                        <p className="text-gray-500 font-Roboto text-center px-4">Open to new opportunities. Let's connect!</p>
-                    </div>
-
-                    {/* Opportunity 2 */}
-                    <div className="aspect-[1.4/1] w-full rounded-xl lg:flex items-center justify-center bg-gray-200 hidden">
-                        <p className="text-gray-500 font-Roboto text-center px-4">Interested in collaborating? Reach out!</p>
-                    </div>
                 </div>
            </div>
         </div>
