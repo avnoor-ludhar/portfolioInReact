@@ -75,7 +75,13 @@ function App() {
       </Helmet>
       <Routes>
         <Route path='/' element={<Home mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} addToRefs={addToRefs} handleClick={handleClick}/>} />
-        <Route path='/resume' element={<Resume />} />
+        <Route path='/resume' element={
+          <Resume 
+          mobileMenuOpen={mobileMenuOpen}
+          setMobileMenuOpen={setMobileMenuOpen}
+          originalHandleClick={handleClick}
+          />
+          } />
       </Routes>
     </>
   )
