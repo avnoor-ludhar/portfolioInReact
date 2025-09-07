@@ -14,7 +14,7 @@ const Footer = ({}, ref)=>{
           <p className="font-bold text-white">
             Avnoor Ludhar
           </p> 
-          <p className="text-white">Copyright © 2024 - All right reserved</p>
+          <p className="text-white">Copyright © 2025 - All right reserved</p>
         </aside> 
         <Socials />
       </footer>
