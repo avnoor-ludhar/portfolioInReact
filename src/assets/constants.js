@@ -3,8 +3,10 @@ import { FaCircleUser } from "react-icons/fa6";
 import { FaPerson } from "react-icons/fa6";
 import { GiSkills } from "react-icons/gi";
 import { MdOutlineSportsGymnastics } from "react-icons/md";
+import btcTrader from "./btcTrader.png";
 import img0 from "./InterviewME.png";
-import img1 from "./Dhol.png";
+import HomeWorthAI from "./HomeWorthAI.png";
+import ShapeShifters from "./ShapeShifters.png";
 import img2 from "./ScheduleApp.png";
 import img3 from "./trainingApp.png";
 import img4 from "./GalleryShooter.png";
@@ -27,6 +29,18 @@ const categories = [
 
 const portfolioImages = [
 {
+    key: 99,
+    img: btcTrader,
+    title: "Bitcoin Trader",
+    content: "An automated Bitcoin trading bot that combines sentiment analysis (VADER) with technical indicators (RSI, SMA7 vs SMA21). Built with Python, FastAPI, React, and PostgreSQL, it yielded $30,000 profit from seeded data.",
+    year: "2024",
+    links: {
+        git: "https://github.com/avnoor-ludhar/BitcoinTrader",
+        website: "https://github.com/avnoor-ludhar/BitcoinTrader"
+    },
+},
+{
+    
     key: 100,
     img: img0,
     links: {
@@ -39,17 +53,31 @@ const portfolioImages = [
 },
 {
     key: 101,
-    img: img1,
-    links: {
-        git: "https://github.com/avnoor-ludhar/Dhol",
-        website: "https://dhol.netlify.app/",
-    },
-    title: "Dhol",
-    content: "Created a front-end application using React, Rapid API, Redux Toolkit, and RTK query. Created a robust UI with strong error handling. Implemented Redux Toolkit to manage complex state in the form of the player slice. Website is hosted on Netlify click the link below to view.",
-    postBreak: "Creation year: 2023."
-}, 
+    img: HomeWorthAI,
+    title: "HomeWorthAI",
+    content:
+      "A web app that helps California wildfire victims recall lost items for insurance claims. Built with Python FastAPI, React, PostgreSQL, TypeScript, and RAG. Leveraged LLaMA 3.3, Detectron2, and Pinecone RAG to personalize an AI chatbot from uploaded data.",
+    year: "2025",
+    links: 
+    {
+        git: "https://github.com/yousefalwahami/HomeWorthAI",
+        website: "https://www.youtube.com/watch?v=GxMox4jB9ag"
+    }
+},
 {
     key: 102,
+    img: ShapeShifters,
+    title: "ShapeShifters",
+    content:
+      "A 3D multiplayer maze game built with Java and Java3D, featuring shape-shifting roles, AI characters, and live predator-prey mechanics.",
+    year: "2025",
+    links: {
+        git: "https://github.com/avnoor-ludhar/ShapeShifters",
+        website: "https://www.youtube.com/watch?v=SfAvzy_RjkA"
+    },
+},
+{
+    key: 103,
     img: img6,
     links: {
         git: "https://github.com/avnoor-ludhar/Portfolio",
@@ -60,7 +88,7 @@ const portfolioImages = [
     postBreak: "Creation year: 2024"
 },
 {
-    key: 103,
+    key: 104,
     img: img2,
     links: {
         git: "https://github.com/avnoor-ludhar/schedule-app",
@@ -71,7 +99,7 @@ const portfolioImages = [
     postBreak: "Creation year: 2023."
 },
 {
-    key: 104,
+    key: 105,
     img: img3, 
     links: {
         git: "https://github.com/avnoor-ludhar/Training-App",
@@ -82,7 +110,7 @@ const portfolioImages = [
     postBreak: "Creation year: 2022.",
 },
 {
-    key: 105,
+    key: 106,
     img: img5,
     links: {
         git: "https://github.com/avnoor-ludhar/Asteroids",
@@ -93,7 +121,7 @@ const portfolioImages = [
     postBreak: "Creation year: 2021"
 },
 {
-    key: 106,
+    key: 107,
     img: img4,
     links: {
         git: "https://github.com/avnoor-ludhar/galleryShooterGame",
